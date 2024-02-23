@@ -1,0 +1,165 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center; /* Mengatur semua elemen ke tengah */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left; /* Mengatur konten kembali ke kiri */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px;
+    text-align: center; /* Memusatkan judul */
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="checkbox"],
+button {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Header */
+.head_bar {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 5px 5px rgba(146, 161, 176, 0.15);
+}
+
+.head_bar__title {
+    color: #000000;
+    font-size: 2em;
+}
+
+/* Sections */
+.input_section,
+.search_section,
+.book_shelf {
+    margin-bottom: 30px;
+}
+
+/* Form */
+.input_section h2,
+.search_section h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
+.input_inline {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Memusatkan item input */
+}
+
+.input_inline label {
+    margin-right: 10px;
+}
+
+/* Bookshelf */
+.book_shelf h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.book_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    justify-content: center; /* Memusatkan item di dalam grid */
+}
+
+.book_item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Memusatkan isi item */
+}
+
+.book_item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.book_item p {
+    margin-bottom: 5px;
+}
+
+.book_item .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Memusatkan tombol aksi */
+}
+
+.book_item button {
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.green {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+}
+
+.red {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .head_bar__title {
+        font-size: 1.5em;
+    }
+
+    .input_section h2,
+    .search_section h2,
+    .book_shelf h2 {
+        font-size: 1.2em;
+    }
+
+    .book_item {
+        padding: 15px;
+    }
+}
